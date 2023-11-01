@@ -71,7 +71,7 @@ public class BerkananBluetoothService: NSObject {
   ///
   /// Note: Events are not delivered on the main thread.
   private var discoverServiceSubjectBacking: PassthroughSubject<BerkananBluetoothService, Never>?
-@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+@available(OSX 10.15, iOS 17.0, tvOS 13.0, watchOS 6.0, *)
 public private(set) var discoverServiceSubject: PassthroughSubject<BerkananBluetoothService, Never> {
     if let existingSubject = discoverServiceSubjectBacking {
         return existingSubject
@@ -83,7 +83,7 @@ public private(set) var discoverServiceSubject: PassthroughSubject<BerkananBluet
 }
 
 private var numberOfServicesInRangeSubjectBacking: PassthroughSubject<Int, Never>?
-@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+@available(OSX 10.15, iOS 17.0, tvOS 13.0, watchOS 6.0, *)
 public private(set) var numberOfServicesInRangeSubject: PassthroughSubject<Int, Never> {
     if let existingSubject = numberOfServicesInRangeSubjectBacking {
         return existingSubject
@@ -95,7 +95,7 @@ public private(set) var numberOfServicesInRangeSubject: PassthroughSubject<Int, 
 }
 
 private var receiveMessageSubjectBacking: PassthroughSubject<Message, Never>?
-@available(OSX 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
+@available(OSX 10.15, iOS 17.0, tvOS 13.0, watchOS 6.0, *)
 public private(set) var receiveMessageSubject: PassthroughSubject<Message, Never> {
     if let existingSubject = receiveMessageSubjectBacking {
         return existingSubject
